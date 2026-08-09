@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thr33itsolutions.com/sitemap.xml
