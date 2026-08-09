@@ -1,0 +1,663 @@
+
+---
+
+### `index.html`
+```html
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO -->
+    <title>Thr33 IT Solutions | Tecnología al alcance de todos | Pénjamo, Gto.</title>
+    <meta name="description" content="Soluciones tecnológicas profesionales en Pénjamo, Guanajuato. Soporte técnico, hardware, redes, desarrollo web, punto de venta y privacidad digital para personas, emprendedores y PyMEs.">
+    <meta name="keywords" content="soporte técnico Pénjamo, mantenimiento computadoras Pénjamo, páginas web Pénjamo, punto de venta Pénjamo, privacidad digital, GrapheneOS, Tails, Thr33 IT Solutions">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://thr33itsolutions.com/">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Thr33 IT Solutions | Tecnología al alcance de todos">
+    <meta property="og:description" content="Soluciones tecnológicas profesionales en Pénjamo, Guanajuato. Acercamos la tecnología moderna a tu negocio y vida digital.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://thr33itsolutions.com/">
+    <meta property="og:image" content="https://thr33itsolutions.com/assets/images/og-image.webp">
+    <meta property="og:locale" content="es_MX">
+    
+    <!-- Twitter/X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thr33 IT Solutions | Tecnología al alcance de todos">
+    <meta name="twitter:description" content="Soluciones tecnológicas profesionales en Pénjamo, Gto. Soporte, hardware, redes, web y privacidad digital.">
+    
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Thr33 IT Solutions",
+        "description": "Soluciones tecnológicas profesionales para personas, emprendedores y PyMEs en Pénjamo, Guanajuato y alrededores.",
+        "telephone": "+524691131272",
+        "email": "Thr33_ITSolutions@proton.me",
+        "url": "https://thr33itsolutions.com",
+        "areaServed": ["Pénjamo", "Abasolo", "La Piedad", "Irapuato", "Valle de Santiago"],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Pénjamo",
+            "addressRegion": "Guanajuato",
+            "addressCountry": "MX"
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "15:00",
+                "closes": "22:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Saturday", "Sunday"],
+                "opens": "08:00",
+                "closes": "22:00"
+            }
+        ],
+        "sameAs": [
+            "https://www.instagram.com/leonel_ramirez_333",
+            "https://www.facebook.com/share/1rpybpszeu/",
+            "https://github.com/Thr33-x64"
+        ]
+    }
+    </script>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="apple-touch-icon" href="assets/images/isotipo.svg">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip link accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header" id="header">
+        <nav class="navbar container" aria-label="Navegación principal">
+            <a href="/" class="logo-link" aria-label="Thr33 IT Solutions - Ir al inicio">
+                <img src="assets/images/logo.svg" alt="Thr33 IT Solutions" class="logo-img" width="160" height="40">
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menú">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <ul class="nav-list" id="mainNav" role="menubar">
+                <li role="none"><a href="/" class="nav-link active" role="menuitem">Inicio</a></li>
+                <li role="none"><a href="pages/servicios.html" class="nav-link" role="menuitem">Servicios</a></li>
+                <li role="none"><a href="pages/productos.html" class="nav-link" role="menuitem">Productos</a></li>
+                <li role="none"><a href="pages/paginas-web.html" class="nav-link" role="menuitem">Páginas Web</a></li>
+                <li role="none"><a href="pages/punto-de-venta.html" class="nav-link" role="menuitem">Punto de Venta</a></li>
+                <li role="none"><a href="pages/privacidad.html" class="nav-link" role="menuitem">Privacidad</a></li>
+                <li role="none"><a href="pages/nosotros.html" class="nav-link" role="menuitem">Nosotros</a></li>
+                <li role="none"><a href="pages/blog.html" class="nav-link" role="menuitem">Blog</a></li>
+                <li role="none"><a href="pages/contacto.html" class="nav-link nav-link-cta" role="menuitem">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <!-- ===== HERO ===== -->
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+            <div class="hero-bg-pattern" aria-hidden="true"></div>
+            <div class="container hero-content">
+                <span class="hero-badge">Pénjamo, Guanajuato</span>
+                <h1 id="hero-title" class="hero-title">TECNOLOGÍA<br>AL ALCANCE<br>DE TODOS</h1>
+                <p class="hero-subtitle">
+                    Soluciones tecnológicas profesionales para personas, emprendedores, comerciantes y PyMEs en Pénjamo y alrededores.
+                </p>
+                <div class="hero-cta-group">
+                    <a href="pages/servicios.html" class="btn btn-primary">
+                        Conoce nuestros servicios
+                        <span aria-hidden="true">→</span>
+                    </a>
+                    <a href="https://wa.me/5214691131272" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
+                        <span aria-hidden="true">💬</span> Habla con nosotros
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual" aria-hidden="true">
+                <div class="hero-glow"></div>
+            </div>
+        </section>
+
+        <!-- ===== BREVE PRESENTACIÓN ===== -->
+        <section class="section" aria-labelledby="presentation-title">
+            <div class="container">
+                <div class="presentation-grid">
+                    <div class="presentation-text">
+                        <span class="section-tag">Thr33 IT Solutions</span>
+                        <h2 id="presentation-title" class="section-title">Tecnología moderna para nuestra comunidad</h2>
+                        <p class="section-description">
+                            Somos una empresa tecnológica nacida en <strong>Pénjamo, Guanajuato</strong>, con la intención de acercar herramientas, servicios y conocimientos digitales a personas, emprendedores, comerciantes y pequeñas empresas de nuestra región.
+                        </p>
+                        <p class="section-description">
+                            Creemos que el acceso a tecnología de calidad, la privacidad digital y la soberanía tecnológica no deberían ser privilegios exclusivos de las grandes ciudades. Traemos el mundo moderno a nuestra zona.
+                        </p>
+                        <a href="pages/nosotros.html" class="btn btn-text">
+                            Conoce más sobre nosotros
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </div>
+                    <div class="presentation-values">
+                        <div class="value-card">
+                            <h3>Privacidad</h3>
+                            <p>Mayor control sobre tu información digital.</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Libertad</h3>
+                            <p>Tú decides cómo usar la tecnología, sin ataduras.</p>
+                        </div>
+                        <div class="value-card">
+                            <h3>Soberanía</h3>
+                            <p>Control real sobre tus dispositivos y datos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== SERVICIOS DESTACADOS ===== -->
+        <section class="section section-dark" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Servicios</span>
+                    <h2 id="services-title" class="section-title">¿En qué podemos ayudarte?</h2>
+                    <p class="section-description">Ofrecemos soluciones tecnológicas organizadas para que encuentres exactamente lo que necesitas.</p>
+                </div>
+                <div class="services-grid">
+                    <a href="pages/servicios.html#soporte" class="service-card">
+                        <h3>Soporte y Mantenimiento</h3>
+                        <p>Mantenimiento preventivo, correctivo, limpieza, formateo, instalación de Windows/Linux, respaldo y más.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+                    <a href="pages/servicios.html#hardware" class="service-card">
+                        <h3>Hardware</h3>
+                        <p>Actualización de RAM, instalación de SSD/NVMe, ensamble de equipos, diagnóstico y asesoría de compra.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+                    <a href="pages/servicios.html#redes" class="service-card">
+                        <h3>Redes y Conectividad</h3>
+                        <p>Configuración de routers, Wi-Fi, redes cableadas, cámaras IP, NAS, VPN para acceso remoto.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+                    <a href="pages/servicios.html#negocios" class="service-card">
+                        <h3>Soluciones para Negocios</h3>
+                        <p>Contratos de mantenimiento, servidores PyME, punto de venta, ERP, administración remota.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+                    <a href="pages/paginas-web.html" class="service-card">
+                        <h3>Desarrollo Web</h3>
+                        <p>Landing pages, sitios web corporativos y páginas informativas profesionales para tu negocio.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+                    <a href="pages/privacidad.html" class="service-card">
+                        <h3>Privacidad y Seguridad Digital</h3>
+                        <p>Google Pixel con GrapheneOS, USB con Tails, asesorías de ciberseguridad, antivirus empresariales.</p>
+                        <span class="card-arrow">→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PRODUCTOS DESTACADOS ===== -->
+        <section class="section" aria-labelledby="products-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Productos</span>
+                    <h2 id="products-title" class="section-title">Productos destacados</h2>
+                    <p class="section-description">Dispositivos y herramientas seleccionados para mayor control, privacidad y seguridad digital.</p>
+                </div>
+                <div class="products-grid">
+                    <article class="product-card">
+                        <div class="product-image-placeholder">Pixel + GrapheneOS</div>
+                        <div class="product-info">
+                            <h3>Pixel + GrapheneOS</h3>
+                            <p>Dispositivos configurados con GrapheneOS para usuarios que buscan mayor control, privacidad y seguridad en su experiencia móvil.</p>
+                            <ul class="product-features">
+                                <li>Sistema operativo enfocado en privacidad</li>
+                                <li>Mayor control sobre permisos de apps</li>
+                                <li>Actualizaciones de seguridad frecuentes</li>
+                            </ul>
+                            <a href="pages/productos.html#pixel" class="btn btn-outline btn-sm">Solicitar información</a>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-image-placeholder">USB con Tails</div>
+                        <div class="product-info">
+                            <h3>USB con Tails</h3>
+                            <p>Memorias USB preparadas con Tails, un sistema operativo enfocado en privacidad y seguridad para usos compatibles.</p>
+                            <ul class="product-features">
+                                <li>Sistema operativo portátil</li>
+                                <li>Herramientas de comunicación cifrada</li>
+                                <li>No deja rastros en el equipo anfitrión</li>
+                            </ul>
+                            <a href="pages/productos.html#tails" class="btn btn-outline btn-sm">Solicitar información</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="section-cta-center">
+                    <a href="pages/productos.html" class="btn btn-primary">Ver todos los productos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== ¿POR QUÉ ELEGIRNOS? ===== -->
+        <section class="section section-dark" aria-labelledby="why-us-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">¿Por qué Thr33?</span>
+                    <h2 id="why-us-title" class="section-title">Tecnología cercana, profesional y confiable</h2>
+                </div>
+                <div class="why-us-grid">
+                    <div class="why-us-item">
+                        <h3>Atención local en Pénjamo</h3>
+                        <p>Estamos en tu comunidad. Servicio a domicilio en Pénjamo y cobertura en Abasolo, La Piedad, Irapuato y Valle de Santiago.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Soluciones personalizadas</h3>
+                        <p>Cada cliente es diferente. Analizamos tus necesidades reales y te ofrecemos exactamente lo que requieres, sin venderte de más.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Tecnología accesible</h3>
+                        <p>Explicamos todo de forma clara. No necesitas ser experto en tecnología para entender y aprovechar nuestras soluciones.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Privacidad y soberanía</h3>
+                        <p>Te ayudamos a recuperar el control sobre tu información digital con herramientas y configuraciones enfocadas en privacidad.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Soporte continuo</h3>
+                        <p>No te dejamos solo después del servicio. Ofrecemos seguimiento, soporte remoto y contratos de mantenimiento mensual.</p>
+                    </div>
+                    <div class="why-us-item">
+                        <h3>Atención profesional</h3>
+                        <p>Trato serio, puntual y comprometido. Valoramos tu tiempo y tu confianza por encima de todo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CÓMO TRABAJAMOS ===== -->
+        <section class="section" aria-labelledby="process-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Proceso</span>
+                    <h2 id="process-title" class="section-title">¿Cómo trabajamos?</h2>
+                    <p class="section-description">Un proceso sencillo y transparente, de principio a fin.</p>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <h3>Contacto</h3>
+                        <p>Nos escribes por WhatsApp, llamas o llenas el formulario contándonos qué necesitas.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <h3>Diagnóstico</h3>
+                        <p>Analizamos tu situación sin costo cuando contratas el servicio correspondiente.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <h3>Propuesta</h3>
+                        <p>Te presentamos una solución clara con lo que incluye, el tiempo estimado y el costo.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <h3>Implementación</h3>
+                        <p>Realizamos el trabajo acordado con profesionalismo y te mantenemos al tanto del avance.</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">05</div>
+                        <h3>Soporte</h3>
+                        <p>Te damos seguimiento después del servicio y quedamos disponibles para cualquier duda o ajuste.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PÁGINAS WEB ===== -->
+        <section class="section section-dark" aria-labelledby="web-title">
+            <div class="container">
+                <div class="web-highlight-grid">
+                    <div class="web-highlight-text">
+                        <span class="section-tag">Desarrollo Web</span>
+                        <h2 id="web-title" class="section-title">¿Necesitas una página web para tu negocio?</h2>
+                        <p class="section-description">
+                            Creamos sitios web profesionales e informativos para que tu negocio tenga presencia en internet. Nos encargamos de todo: diseño, desarrollo, dominio, hosting, correo empresarial y más.
+                        </p>
+                        <ul class="web-features-list">
+                            <li>Diseño profesional y responsive</li>
+                            <li>Dominio personalizado</li>
+                            <li>Hosting incluido</li>
+                            <li>Correo empresarial</li>
+                            <li>Integración con WhatsApp</li>
+                            <li>Google Maps para tu negocio</li>
+                            <li>Optimización SEO local</li>
+                            <li>Certificado SSL de seguridad</li>
+                            <li>Capacitación para gestionarla</li>
+                        </ul>
+                        <a href="pages/paginas-web.html" class="btn btn-primary">Solicitar una página web</a>
+                    </div>
+                    <div class="web-highlight-visual" aria-hidden="true">
+                        <div class="web-mockup">
+                            <div class="mockup-browser">
+                                <div class="mockup-dots"><span></span><span></span><span></span></div>
+                                <div class="mockup-content">
+                                    <div class="mockup-body">
+                                        <div class="mockup-line w-60"></div>
+                                        <div class="mockup-line w-80"></div>
+                                        <div class="mockup-line w-40"></div>
+                                        <div class="mockup-image"></div>
+                                        <div class="mockup-line w-70"></div>
+                                        <div class="mockup-line w-50"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PUNTO DE VENTA ===== -->
+        <section class="section" aria-labelledby="pos-title">
+            <div class="container">
+                <div class="pos-highlight-grid">
+                    <div class="pos-highlight-visual" aria-hidden="true">
+                        <div class="pos-visual"></div>
+                    </div>
+                    <div class="pos-highlight-text">
+                        <span class="section-tag">Punto de Venta</span>
+                        <h2 id="pos-title" class="section-title">Soluciones de Punto de Venta para tu comercio</h2>
+                        <p class="section-description">
+                            Instalamos, configuramos y damos soporte a sistemas de punto de venta para que administres tu negocio de forma eficiente. Incluye hardware, software, capacitación y soporte continuo.
+                        </p>
+                        <ul class="web-features-list">
+                            <li>Instalación de equipo POS</li>
+                            <li>Configuración de software</li>
+                            <li>Administración de inventario</li>
+                            <li>Capacitación para tu equipo</li>
+                            <li>Soporte técnico continuo</li>
+                        </ul>
+                        <a href="pages/punto-de-venta.html" class="btn btn-primary">Solicitar información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== PRIVACIDAD DIGITAL ===== -->
+        <section class="section section-dark" aria-labelledby="privacy-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Privacidad Digital</span>
+                    <h2 id="privacy-title" class="section-title">Mayor control sobre tu vida digital</h2>
+                    <p class="section-description">
+                        Ofrecemos herramientas, dispositivos y asesorías para que reduzcas la exposición innecesaria de tus datos y tengas mayor control sobre tu privacidad.
+                    </p>
+                </div>
+                <div class="privacy-cards">
+                    <div class="privacy-card">
+                        <h3>Google Pixel con GrapheneOS</h3>
+                        <p>Dispositivos con un sistema operativo privado y seguro, sin los rastreadores habituales. Para quienes buscan mayor control sobre su experiencia móvil.</p>
+                        <a href="pages/productos.html#pixel" class="btn btn-text">Más información →</a>
+                    </div>
+                    <div class="privacy-card">
+                        <h3>USB con Tails</h3>
+                        <p>Sistema operativo portátil enfocado en privacidad. Ideal para comunicaciones sensibles y navegación sin dejar rastros en el equipo que utilices.</p>
+                        <a href="pages/productos.html#tails" class="btn btn-text">Más información →</a>
+                    </div>
+                    <div class="privacy-card">
+                        <h3>Asesorías de ciberseguridad</h3>
+                        <p>Te orientamos sobre cómo proteger mejor tu información, configurar tus dispositivos de forma segura y reducir riesgos digitales en tu día a día.</p>
+                        <a href="pages/privacidad.html" class="btn btn-text">Más información →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== TESTIMONIOS ===== -->
+        <section class="section" aria-labelledby="testimonials-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Testimonios</span>
+                    <h2 id="testimonials-title" class="section-title">Lo que dicen nuestros clientes</h2>
+                </div>
+                <div class="testimonials-empty">
+                    <div class="empty-state">
+                        <p>Tus comentarios pueden aparecer aquí.</p>
+                        <p class="empty-sub">Estamos comenzando y pronto compartiremos experiencias reales de nuestros clientes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== BLOG ===== -->
+        <section class="section section-dark" aria-labelledby="blog-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Blog</span>
+                    <h2 id="blog-title" class="section-title">Artículos y recursos</h2>
+                </div>
+                <div class="blog-empty">
+                    <div class="empty-state">
+                        <p>Próximamente</p>
+                        <p class="empty-sub">Estamos preparando contenido útil sobre tecnología, privacidad, seguridad digital y soluciones para tu negocio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== FAQ ===== -->
+        <section class="section" aria-labelledby="faq-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">FAQ</span>
+                    <h2 id="faq-title" class="section-title">Preguntas frecuentes</h2>
+                </div>
+                <div class="faq-list" itemscope itemtype="https://schema.org/FAQPage">
+                    <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq-question" itemprop="name">¿Dónde ofrecen servicio?</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Nuestra zona principal es Pénjamo, Guanajuato. También cubrimos Abasolo, La Piedad, Irapuato y Valle de Santiago. Ofrecemos servicio a domicilio en Pénjamo y alrededores.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq-question" itemprop="name">¿Trabajan a domicilio?</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Sí, ofrecemos servicio a domicilio en Pénjamo y alrededores. Contáctanos para coordinar la visita.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq-question" itemprop="name">¿Qué métodos de pago aceptan?</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Aceptamos transferencia bancaria, efectivo, Ethereum, Monero, Zcash y USDT.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq-question" itemprop="name">¿Puedo solicitar una cotización?</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Por supuesto. Puedes contactarnos por WhatsApp, teléfono, correo o mediante el formulario de contacto y con gusto te preparamos una cotización personalizada sin compromiso.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq-question" itemprop="name">¿Instalan Windows y Linux?</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Sí, realizamos instalación y configuración de ambos sistemas operativos según tus necesidades.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq-question" itemprop="name">¿Realizan mantenimiento a empresas?</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Sí, ofrecemos contratos de mantenimiento mensual para PyMEs, incluyendo administración de inventario de equipos, soporte remoto y mantenimiento preventivo.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                        <summary class="faq-question" itemprop="name">¿Crean páginas web?</summary>
+                        <div class="faq-answer" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+                            <p itemprop="text">Sí, desarrollamos landing pages, sitios web corporativos y páginas informativas profesionales. Nos encargamos del diseño, dominio, hosting, correo empresarial, SEO local y capacitación.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===== CONTACTO ===== -->
+        <section class="section section-dark" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contacto</span>
+                    <h2 id="contact-title" class="section-title">Hablemos</h2>
+                    <p class="section-description">Cuéntanos qué necesitas. Estamos listos para ayudarte.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <div class="contact-methods">
+                            <a href="https://wa.me/5214691131272" class="contact-method-card" target="_blank" rel="noopener noreferrer">
+                                <span aria-hidden="true">💬</span> WhatsApp
+                            </a>
+                            <a href="tel:+524691131272" class="contact-method-card">
+                                <span aria-hidden="true">📞</span> +52 469 113 1272
+                            </a>
+                            <a href="mailto:Thr33_ITSolutions@proton.me" class="contact-method-card">
+                                <span aria-hidden="true">✉️</span> Thr33_ITSolutions@proton.me
+                            </a>
+                        </div>
+                        <div class="contact-hours">
+                            <h3>Horario de atención</h3>
+                            <p>Lunes a viernes: <strong>15:00 – 22:00</strong></p>
+                            <p>Sábado y domingo: <strong>08:00 – 22:00</strong></p>
+                        </div>
+                        <div class="contact-coverage">
+                            <h3>Cobertura</h3>
+                            <p>Pénjamo, Abasolo, La Piedad, Irapuato y Valle de Santiago.</p>
+                            <p>Servicio a domicilio en Pénjamo y alrededores.</p>
+                        </div>
+                    </div>
+                    <form class="contact-form" id="contactForm" novalidate>
+                        <div class="form-group">
+                            <label for="formName">Nombre <span aria-hidden="true">*</span></label>
+                            <input type="text" id="formName" name="name" required placeholder="Tu nombre completo" autocomplete="name">
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="formPhone">Teléfono</label>
+                            <input type="tel" id="formPhone" name="phone" placeholder="+52 000 000 0000" autocomplete="tel">
+                        </div>
+                        <div class="form-group">
+                            <label for="formEmail">Correo electrónico</label>
+                            <input type="email" id="formEmail" name="email" placeholder="tu@correo.com" autocomplete="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="formService">Servicio de interés</label>
+                            <select id="formService" name="service">
+                                <option value="">Selecciona una opción</option>
+                                <option value="soporte">Soporte y Mantenimiento</option>
+                                <option value="hardware">Hardware</option>
+                                <option value="redes">Redes y Conectividad</option>
+                                <option value="negocios">Soluciones para Negocios</option>
+                                <option value="web">Desarrollo Web</option>
+                                <option value="privacidad">Privacidad y Seguridad</option>
+                                <option value="producto">Productos (Pixel/Tails)</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="formMessage">Mensaje <span aria-hidden="true">*</span></label>
+                            <textarea id="formMessage" name="message" rows="4" required placeholder="Cuéntanos qué necesitas..."></textarea>
+                            <span class="form-error" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Solicitar cotización</button>
+                        <p class="form-alt">¿Prefieres hablar directo? <a href="https://wa.me/5214691131272" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp →</a></p>
+                    </form>
+                </div>
+                <div class="map-placeholder" id="mapPlaceholder">
+                    <div class="map-placeholder-content">
+                        <span aria-hidden="true">📍</span>
+                        <p>Pénjamo, Guanajuato, México</p>
+                        <span>Mapa próximamente</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/images/logo-white.svg" alt="Thr33 IT Solutions" class="footer-logo" width="140" height="35">
+                    <p class="footer-tagline">Tecnología al alcance de todos</p>
+                    <p class="footer-description">Soluciones tecnológicas profesionales en Pénjamo, Guanajuato. Acercamos la innovación a personas, emprendedores y PyMEs de nuestra región.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Explora</h4>
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="pages/servicios.html">Servicios</a></li>
+                        <li><a href="pages/productos.html">Productos</a></li>
+                        <li><a href="pages/paginas-web.html">Páginas Web</a></li>
+                        <li><a href="pages/punto-de-venta.html">Punto de Venta</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Más</h4>
+                    <ul>
+                        <li><a href="pages/privacidad.html">Privacidad</a></li>
+                        <li><a href="pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
+                        <li><a href="pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li><a href="tel:+524691131272">+52 469 113 1272</a></li>
+                        <li><a href="mailto:Thr33_ITSolutions@proton.me">Thr33_ITSolutions@proton.me</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/leonel_ramirez_333" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+                        <a href="https://www.facebook.com/share/1rpybpszeu/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+                        <a href="https://github.com/Thr33-x64" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GH</a>
+                    </div>
+                    <p class="footer-hours">
+                        Lun–Vie: 15:00–22:00<br>
+                        Sáb–Dom: 08:00–22:00
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Thr33 IT Solutions. Todos los derechos reservados.</p>
+                <p class="footer-credit">Hecho por Thr33</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ WHATSAPP FLOATING BUTTON ============ -->
+    <a href="https://wa.me/5214691131272" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <span aria-hidden="true">💬</span>
+        <span class="whatsapp-tooltip">¡Hola! ¿En qué podemos ayudarte?</span>
+    </a>
+
+    <script src="js/main.js" defer></script>
+</body>
+</html>
