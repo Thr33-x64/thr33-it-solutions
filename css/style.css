@@ -239,7 +239,7 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.15;let
 /* ============ LOGO GRANDE ============ */
 
 .logo-img {
-    height: 56px !important;  /* Antes era 32px */
+    height: 44px !important;  /* Antes era 32px */
     width: auto !important;
 }
 
@@ -253,4 +253,23 @@ h1,h2,h3,h4{font-family:var(--font-display);font-weight:700;line-height:1.15;let
     .logo-img {
         height: 40px !important;
     }
+}
+
+.services-float {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    z-index: 90;
+    background: var(--color-purple);
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 28px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 30px var(--color-purple-glow);
+    transition: all var(--transition);
+}
+.services-float:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 40px var(--color-purple-glow);
 }
